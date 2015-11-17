@@ -13,32 +13,26 @@ It support custom dot view.
 
 Usage
 =====
-load image from local With custom dot view
----------------------
+load image from local with classic dot
+--------------------------------------
 ```objective-c
-NSArray *images = @[[UIImage imageNamed:@"image1.jpg"],
-[UIImage imageNamed:@"image2.jpg"],
-[UIImage imageNamed:@"image3.jpg"],
-[UIImage imageNamed:@"image4.jpg"]
-];
-MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) imagesGroup:images];
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) imagesGroup:imageArray];
+view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
+```
+
+load image from local With custom dot view
+-----------------------------------------
+```objective-c
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) imagesGroup:imageArray];
 view.pageControlStyle = MSPScrollViewPageControlStyleCustom;
 view.customPageControl.dotImage = [UIImage imageNamed:@"dotImage.jpg"];
 view.customPageControl.dotImageHL = [UIImage imageNamed:@"dotImageHL.jpg"];
-view.delegate = self;
-[self.view addSubView:view];
 ```
 
 load image from net 
 -------------------
 ```objective-c
-NSString *image1 = [NSString stringWithFormat:@"http://pic.nipic.com/2007-11-09/2007119122519868_2.jpg"];
-NSString *image2 = [NSString stringWithFormat:@"http://pic25.nipic.com/20121209/9252150_194258033000_2.jpg"];
-NSString *image3 = [NSString stringWithFormat:@"http://zx.kaitao.cn/UserFiles/Image/beijingtupian6.jpg"];
-NSString *image4 = [NSString stringWithFormat:@"http://pic8.nipic.com/20100723/5296193_105040043769_2.jpg"];
-NSArray *imageurl = @[image1,image2,image3,image4];
-MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) URLStringsGroup:imageurl];
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) URLStringsGroup:imagURLlArray];
 view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
-[self.view addSubview:view];
 ```
 
