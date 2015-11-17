@@ -18,14 +18,14 @@ Usage
 load image from local with classic dot
 --------------------------------------
 ```objective-c
-MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) imagesGroup:imageArray];
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:frame imagesGroup:imageArray];
 view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
 ```
 
 load image from local With custom dot view
 -----------------------------------------
 ```objective-c
-MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) imagesGroup:imageArray];
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:frame imagesGroup:imageArray];
 view.pageControlStyle = MSPScrollViewPageControlStyleCustom;
 view.customPageControl.dotImage = [UIImage imageNamed:@"dotImage.jpg"];
 view.customPageControl.dotImageHL = [UIImage imageNamed:@"dotImageHL.jpg"];
@@ -34,7 +34,7 @@ view.customPageControl.dotImageHL = [UIImage imageNamed:@"dotImageHL.jpg"];
 load image from net 
 -------------------
 ```objective-c
-MSPScrollView *view = [MSPScrollView scrollViewWithFrame:CGRectMake(0, 300, 320, 200) URLStringsGroup:imagURLlArray];
+MSPScrollView *view = [MSPScrollView scrollViewWithFrame:frame URLStringsGroup:imagURLlArray];
 view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
 ```
 
