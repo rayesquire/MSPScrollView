@@ -1,13 +1,15 @@
 # MSPScrollView
 
-MSPScrollView is a framework on the basis of SDCycleScrollView.But it is smaller than SDCycleScrollView.It cancel the function of layout title and use UIScrollView instead of UICollectionView.
+MSPScrollView is a framework on the basis of SDCycleScrollView.But it is more simplify than SDCycleScrollView.It cancel the function of layout title and use UIScrollView instead of UICollectionView.
 It use to implement picture carousel;
 
 
 Features
 ========
 It support local image array or international image array.
+
 Using SDWebImage to manage cache.
+
 It support custom dot view.
 
 
