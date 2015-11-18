@@ -15,11 +15,10 @@ It support custom dot view.
 
 Usage
 =====
-load image from local with classic dot
+load image from local with classic dot view
 --------------------------------------
 ```objective-c
 MSPScrollView *view = [MSPScrollView scrollViewWithFrame:frame imagesGroup:imageArray];
-view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
 ```
 
 load image from local With custom dot view
@@ -35,6 +34,5 @@ load image from net
 -------------------
 ```objective-c
 MSPScrollView *view = [MSPScrollView scrollViewWithFrame:frame URLStringsGroup:imagURLlArray];
-view.pageControlStyle = MSPScrollViewPageControlStyleClassic;
 ```
 
