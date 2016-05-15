@@ -10,7 +10,7 @@
 #import "MSPPageControl.h"
 #import "SDImageCache.h"
 #import "SDWebImageDownloader.h"
-#import <SDWebImage/SDWebImageManager.h>
+#import "SDWebImage/SDWebImageManager.h"
 
 @interface MSPScrollView () <UIScrollViewDelegate>
 
