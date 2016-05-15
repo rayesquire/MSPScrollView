@@ -16,6 +16,11 @@ It support custom dot view.
 Usage
 =====
 <<<<<<< HEAD
+
+#warnings
+if using UINavigationController,you should set 
+self.automaticallyAdjustsScrollViewInsets = NO;
+
 load image from local with classic dot
 --------------------------------------
 ```objective-c
