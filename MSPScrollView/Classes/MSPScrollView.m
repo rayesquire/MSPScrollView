@@ -162,13 +162,15 @@
             [_imagesGroup replaceObjectAtIndex:i withObject:image];
         }
         else {
+            __weak typeof(self) weakSelf = self;
             SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
             [downloader downloadImageWithURL:url options:SDWebImageDownloaderUseNSURLCache progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+                __strong typeof(weakSelf) strongSelf = weakSelf;
                 if (image) {
-                    if (i < _netImageURLGroup.count && [_netImageURLGroup[i] isEqualToString:urlString]) {
-                        [_imagesGroup replaceObjectAtIndex:i withObject:image];
+                    if (i < self.netImageURLGroup.count && [strongSelf.netImageURLGroup[i] isEqualToString:urlString]) {
+                        [strongSelf.imagesGroup replaceObjectAtIndex:i withObject:image];
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            [self reloadImage];
+                            [strongSelf reloadImage];
                         });
                     }
                 }
