@@ -1,10 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = 'MSPScrollView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MSPScrollView.'
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.version          = '0.1.3'
+  s.summary          = 'A simple image scroll tool'
+  s.description      = '一个简单的图片轮播控件,可以自定义page control'
 
   s.homepage         = 'https://github.com/rayesquire/MSPScrollView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -18,9 +16,6 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
     'MSPScrollView' => ['MSPScrollView/Assets/*.{png,jpg}', 'MSPScrollView/MSPScrollView.xcassets']
   }
-  # s.resources = ['MSPScrollView/Assets/*.{png,jpg}', 'MSPScrollView/MSPScrollView.xcassets']
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'SDWebImage'
 end
