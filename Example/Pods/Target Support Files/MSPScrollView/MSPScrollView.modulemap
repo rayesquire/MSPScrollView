@@ -1,0 +1,6 @@
+framework module MSPScrollView {
+  umbrella header "MSPScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

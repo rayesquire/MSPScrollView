@@ -1,0 +1,32 @@
+{
+  "name": "MSPScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of MSPScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rayesquire/MSPScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rayesquire": "mashaopeng@meituan.com"
+  },
+  "source": {
+    "git": "https://github.com/rayesquire/MSPScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MSPScrollView/Classes/**/*",
+  "resources": [
+    "MSPScrollView/Assets/*.{png,jpg}",
+    "MSPScrollView/MSPScrollView.xcassets"
+  ],
+  "frameworks": "UIKit",
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
+}

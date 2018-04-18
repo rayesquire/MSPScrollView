@@ -1,0 +1,25 @@
+PODS:
+  - MSPScrollView (0.1.0):
+    - SDWebImage
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+
+DEPENDENCIES:
+  - MSPScrollView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  MSPScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSPScrollView: e82dee79bc091b6625d40b84d4f3ea52d9404924
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+
+PODFILE CHECKSUM: cda3bd7b3d4ef8f2e6883656275106e91972f99a
+
+COCOAPODS: 1.5.0

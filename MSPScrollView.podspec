@@ -1,22 +1,26 @@
 Pod::Spec.new do |s|
-    s.name         = "MSPScrollView"
-    s.version      = "0.1.0"
-    s.summary      = "图片轮播控件"
-    s.description  = <<-DESC
-                      图片轮播控件
-                     DESC
-    s.homepage     = "https://github.com/rayesquire/MSPScrollView"
-    
-    s.license      = 'MIT'
-    s.author       = { "MaShaopeng" => "fantastic.msp@gmail.com" }
-    #s.social_media_url = ""
-    s.source       = { :git => "https://github.com/rayesquire/MSPScrollView.git", :tag => s.version.to_s }
+  s.name             = 'MSPScrollView'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of MSPScrollView.'
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/rayesquire/MSPScrollView'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'rayesquire' => 'mashaopeng@meituan.com' }
+  s.source           = { :git => 'https://github.com/rayesquire/MSPScrollView.git', :tag => s.version.to_s }
+
+  s.ios.deployment_target = '8.0'
+
+  s.source_files = 'MSPScrollView/Classes/**/*'
   
-    s.platform     = :ios, '7.0'
-    s.requires_arc = true
-  
-    # s.source_files = 'YXYNumberAnimationLabel/**/*.{h,m}'
-    s.frameworks = 'Foundation', 'UIKit'
-    
-    #s.dependency '', '~> 0.1'
-  end
+  s.resource_bundles = {
+    'MSPScrollView' => ['MSPScrollView/Assets/*.{png,jpg}', 'MSPScrollView/MSPScrollView.xcassets']
+  }
+  # s.resources = ['MSPScrollView/Assets/*.{png,jpg}', 'MSPScrollView/MSPScrollView.xcassets']
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
+  s.dependency 'SDWebImage'
+end
