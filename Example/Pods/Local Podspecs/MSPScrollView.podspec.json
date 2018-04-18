@@ -19,10 +19,12 @@
     "ios": "8.0"
   },
   "source_files": "MSPScrollView/Classes/**/*",
-  "resources": [
-    "MSPScrollView/Assets/*.{png,jpg}",
-    "MSPScrollView/MSPScrollView.xcassets"
-  ],
+  "resource_bundles": {
+    "MSPScrollView": [
+      "MSPScrollView/Assets/*.{png,jpg}",
+      "MSPScrollView/MSPScrollView.xcassets"
+    ]
+  },
   "frameworks": "UIKit",
   "dependencies": {
     "SDWebImage": [
