@@ -20,7 +20,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		F6F37C66E05BA41C5CD69354 /* Pods_MSPScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1422603A9CB625503D32871E /* Pods_MSPScrollView_Example.framework */; };
+		B8D977CA579286883B7A142C /* libPods-MSPScrollView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561460851F9DB86762CA84E4 /* libPods-MSPScrollView_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +35,10 @@
 
 /* Begin PBXFileReference section */
 		0DB83EA3A7C16A949FB70113 /* MSPScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSPScrollView.podspec; path = ../MSPScrollView.podspec; sourceTree = "<group>"; };
-		1422603A9CB625503D32871E /* Pods_MSPScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSPScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBA49C38F9A6B9FEB4A018F /* Pods-MSPScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSPScrollView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSPScrollView_Example/Pods-MSPScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7F7A81BAFBF3A746E81D53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4C8F719608D3548D44AB5CF8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		561460851F9DB86762CA84E4 /* libPods-MSPScrollView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSPScrollView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MSPScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSPScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,7 +70,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F6F37C66E05BA41C5CD69354 /* Pods_MSPScrollView_Example.framework in Frameworks */,
+				B8D977CA579286883B7A142C /* libPods-MSPScrollView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				720A311F203B28DDF0364938 /* libPods-MSPScrollView_Tests.a */,
-				1422603A9CB625503D32871E /* Pods_MSPScrollView_Example.framework */,
+				561460851F9DB86762CA84E4 /* libPods-MSPScrollView_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				509A07A690C4CEEF019DF13C /* [CP] Embed Pods Frameworks */,
+				A5C56A432A3D7A4570873633 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,24 +279,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		509A07A690C4CEEF019DF13C /* [CP] Embed Pods Frameworks */ = {
+		A5C56A432A3D7A4570873633 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MSPScrollView_Example/Pods-MSPScrollView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MSPScrollView/MSPScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MSPScrollView_Example/Pods-MSPScrollView_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MSPScrollView/MSPScrollView.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSPScrollView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MSPScrollView.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSPScrollView_Example/Pods-MSPScrollView_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSPScrollView_Example/Pods-MSPScrollView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DBA91FEE7D770CE455A3738A /* [CP] Check Pods Manifest.lock */ = {
