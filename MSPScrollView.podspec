@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MSPScrollView'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A simple image scroll tool'
   s.description      = '一个简单的图片轮播控件,可以自定义page control'
 
