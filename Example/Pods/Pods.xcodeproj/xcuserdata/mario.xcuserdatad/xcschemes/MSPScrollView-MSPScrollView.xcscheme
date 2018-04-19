@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D87418B211B2309D8DC50B9CC0EE4F4"
+               BlueprintIdentifier = "128412487166CE2276B4DCA7C60D5F61"
                BuildableName = "MSPScrollView.bundle"
                BlueprintName = "MSPScrollView-MSPScrollView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3D87418B211B2309D8DC50B9CC0EE4F4"
+            BlueprintIdentifier = "128412487166CE2276B4DCA7C60D5F61"
             BuildableName = "MSPScrollView.bundle"
             BlueprintName = "MSPScrollView-MSPScrollView"
             ReferencedContainer = "container:Pods.xcodeproj">

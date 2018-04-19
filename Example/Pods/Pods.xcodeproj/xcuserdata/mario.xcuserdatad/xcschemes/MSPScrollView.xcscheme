@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24BB0B798BB87337BF2EAF17226DF5BA"
+               BlueprintIdentifier = "FDB4657A90319A332B6470BA7A502313"
                BlueprintName = "MSPScrollView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "MSPScrollView.framework">
+               BuildableName = "libMSPScrollView.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

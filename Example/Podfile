@@ -1,4 +1,3 @@
-use_frameworks!
 target 'MSPScrollView_Example' do
   pod 'MSPScrollView', :path => '../'
 end

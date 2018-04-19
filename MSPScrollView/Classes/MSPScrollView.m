@@ -141,7 +141,11 @@
     _netImageURLGroup = netImageURLGroup;
     _totalCount = netImageURLGroup.count;
     _imagesGroup = [[NSMutableArray alloc] initWithCapacity:_totalCount];
-    self.placeholderImage = [UIImage imageNamed:@"default.jpg" inBundle:[NSBundle bundleForClass:[self class]]  compatibleWithTraitCollection:nil];   // 初始化placeholderimage
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [bundle URLForResource:@"MSPScrollView" withExtension:@"bundle"];
+    NSBundle *targetBundle = [NSBundle bundleWithURL:url];
+    // 初始化placeholderimage
+    self.placeholderImage = [UIImage imageNamed:@"default.jpg" inBundle:targetBundle compatibleWithTraitCollection:nil];
     [self setupPageControl];
 }
 

@@ -1,5 +1,5 @@
 PODS:
-  - MSPScrollView (0.1.0):
+  - MSPScrollView (0.1.3):
     - SDWebImage
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
@@ -17,9 +17,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MSPScrollView: 9ea37827f0c872a42d1d05c5aeb2338d973e6eb0
+  MSPScrollView: a5906e49cc5f40dd23120457885776c2e8c7e1b7
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: cda3bd7b3d4ef8f2e6883656275106e91972f99a
+PODFILE CHECKSUM: 4363439c807eeb5063c13d6f1475fa6aef5771eb
 
 COCOAPODS: 1.5.0
